@@ -12,16 +12,31 @@
     <form>
       <fieldset>
         <label for="firstname"
-          >Enter Your First Name:
-          <input type="text" name="firstname" required />
+          >First Name:
+          <input
+            type="text"
+            name="firstname"
+            placeholder="Enter your first name..."
+            required
+          />
         </label>
         <label for="lastname">
-          Enter Your Last Name:
-          <input type="text" name="lastname" required />
+          Last Name:
+          <input
+            type="text"
+            name="lastname"
+            placeholder="Enter your last name..."
+            required
+          />
         </label>
         <label for="email"
-          >Enter Your email:
-          <input type="email" name="email" required />
+          >Email:
+          <input
+            type="email"
+            name="email"
+            placeholder="Enter your email..."
+            required
+          />
         </label>
         <label for="password"
           >Create a New Password:
@@ -46,7 +61,31 @@
           <input type="checkbox" name="terms" required />
         </label>
       </fieldset>
-      <fieldset></fieldset>
+      <fieldset>
+        <label for="file"
+          >Upload a profile picture:
+          <input type="file" name="file" />
+        </label>
+        <label for="age"
+          >Input your age:
+          <input type="number" name="age" min="13" max="99" required />
+        </label>
+        <label for="selection"
+          >How did you hear about us?
+          <select name="selection">
+            <option value="">(select one)</option>
+            <option value="1">Facebook</option>
+            <option value="2">Youtube</option>
+            <option value="3">Twitter</option>
+            <option value="4">Other</option>
+          </select>
+        </label>
+        <label>
+          Provide a bio:
+          <textarea rows="5" cols="30"> </textarea>
+        </label>
+      </fieldset>
+      <input type="submit" value="Submit" />
     </form>
   </body>
 </html>
