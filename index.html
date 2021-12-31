@@ -10,7 +10,28 @@
   <body>
     <h1>Registration Form</h1>
     <form>
-      <fieldset></fieldset>
+      <fieldset>
+        <label for="firstname"
+          >Enter Your First Name:
+          <input type="text" name="firstname" required />
+        </label>
+        <label for="lastname">
+          Enter Your Last Name:
+          <input type="text" name="lastname" required />
+        </label>
+        <label for="email"
+          >Enter Your email:
+          <input type="email" name="email" required />
+        </label>
+        <label for="password"
+          >Create a New Password:
+          <input
+            type="password"
+            name="password"
+            pattern="[a-z0-9]{8,} required"
+          />
+        </label>
+      </fieldset>
       <fieldset></fieldset>
       <fieldset></fieldset>
     </form>
