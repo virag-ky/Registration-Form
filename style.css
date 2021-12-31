@@ -4,11 +4,12 @@ body {
   background-color: rgb(61, 61, 88);
   color: white;
   font-size: 16px;
+  margin-bottom: 80px;
 }
 h1 {
   text-align: center;
   margin-top: 50px;
-  margin-bottom: 80px;
+  margin-bottom: 50px;
 }
 form {
   margin: 0 auto;
@@ -32,6 +33,7 @@ input[type="password"] {
   margin-top: 10px;
   margin-bottom: 15px;
   font-size: 16px;
+  color: white;
   background-color: rgb(16, 16, 59);
   border: none;
 }
@@ -41,4 +43,57 @@ fieldset:not(:last-of-type) {
 .block {
   display: block;
   padding: 10px;
+}
+input[type="radio"],
+input[type="checkbox"] {
+  vertical-align: top;
+}
+textarea {
+  margin-top: 10px;
+  background-color: rgb(16, 16, 59);
+  border: none;
+  color: white;
+  width: 99%;
+}
+input[type="number"],
+input[type="file"] {
+  background-color: rgb(16, 16, 59);
+  border: none;
+  width: 102%;
+  color: white;
+  margin-top: 10px;
+}
+input[type="file"] {
+  padding: 6px 0;
+}
+input[type="number"] {
+  min-height: 2.5em;
+  padding: 0;
+}
+input[type="submit"] {
+  display: block;
+  margin: 0 auto;
+  width: 250px;
+  border: 1px solid white;
+  background-color: rgb(61, 61, 88);
+  color: white;
+  padding: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+select {
+  margin-top: 10px;
+  display: block;
+}
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 1.8em;
+  }
+  textarea {
+    width: 80%;
+    margin: 15px auto;
+  }
+  input[type="submit"] {
+    width: 30%;
+  }
 }
